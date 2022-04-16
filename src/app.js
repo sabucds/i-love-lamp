@@ -18,7 +18,7 @@ class App {
       .build();
 
     // receives the "colorChanged" web socket event
-    connection.on("colorChanged", hex => {
+    connection.on("colorChanged", (hex) => {
       // add a color circle
       this.updateColor(hex);
     });
